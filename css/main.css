@@ -1,0 +1,104 @@
+.form {
+    background: #eeeeee;
+    border-radius: 6px;
+    padding: 40px;
+    margin: 60px 0;
+} 
+
+.form .validation-error {
+    border-color: #db1919;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.form .validation-ok {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 55, 0.25);
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.issueInfoCard {
+    padding: 20px 20px 30px 20px;
+    background: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    margin: 0 10px 30px 10px;
+    flex-grow: 12;
+    max-width: 48%;
+}
+
+.issueInfoCard .status {
+    background: #54a4f9;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.issueInfoCard .status.open {
+    background: #54a4f9;
+}
+
+.issueInfoCard .status.closed {
+    background: #a8a8a8;
+}
+
+.issueInfoCard h3 {
+    margin: 1em 0 0.2em 0;
+}
+
+.issueInfoCard p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.issueInfoCard .info {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.issueInfoCard .info .priority {
+    margin-right: 15px;
+}
+
+.issueInfoCard .info .priority.ultra {
+    color: #d30000;
+}
+
+.issueInfoCard .info .priority.high {
+    color: #d39e00;
+}
+
+.issueInfoCard .info .priority.low {
+    color: #7fd300;
+}
+
+.issueInfoCard .manage {
+    margin-top: 3em;
+}
+
+.issueInfoCard .manage .solve,
+.issueInfoCard .manage .delete {
+    padding: 10px 15px;
+    background: #d39e00;
+    border-radius: 3px;
+    margin-right: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.issueInfoCard .manage .delete {
+    background: #d30000;
+}
